@@ -1,0 +1,272 @@
+
+@font-face{
+    font-family:"Web-Raleway";
+    src:url('../fonts/Raleway-Regular.eot');
+    src:url('../fonts/Raleway-Regular.eot?#iefix') format("embedded-opentype"),
+    url('../fonts/Raleway-Regular.woff') format("woff"),
+    url('../fonts/Raleway-Regular.ttf') format("truetype"),
+    url('../fonts/Raleway-Regular.svg#web') format("svg");
+    font-style:normal;font-weight:normal;
+}
+
+@font-face{
+    font-family:"Web-Raleway-Bold";
+    src:url('../fonts/Raleway-Bold.eot');
+    src:url('../fonts/Raleway-Bold.eot?#iefix') format("embedded-opentype"),
+    url('../fonts/Raleway-Bold.woff') format("woff"),
+    url('../fonts/Raleway-Bold.ttf') format("truetype"),
+    url('../fonts/Raleway-Bold.svg#web') format("svg");
+    font-style:normal;font-weight:normal;
+}
+
+/* kofigurasi sebelum responsif */
+body{
+    margin : 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #373737;
+}
+.clear{
+    float: none;
+    clear: both;
+}
+.center{
+    width : 961px;
+    margin : 0 auto;
+}
+a{
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+/* konfigurasi header */
+#header{
+    padding: 35px 0;
+}
+#header #logo{
+    float: left;
+}
+#header .navigation{
+    float: right;
+}
+#header .navigation ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+#header .navigation ul li{
+    display: inline-block;
+    font-size: 18px;
+    font-family: "Web-Raleway-Bold";
+}
+#header .navigation ul li a{
+    display: inline-block;
+    padding: 20px 25px;
+    text-transform: uppercase;
+    color       : #373737;
+    text-decoration: none;
+}
+#header .navigation ul li a:hover{
+    color : #e74c3c;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+/* konfigurasi banner */
+#banner{
+    background: url("../img/banner2.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding: 115px;
+    color: #FFFFFF;
+    text-align: center;
+}
+#banner h1{
+    font-size: 44px;
+    font-family: "Web-Raleway-Bold";
+    text-transform: uppercase;
+    font-weight: normal;
+}
+#banner h2{
+    font-size: 26px;
+    font-family: "Web-Raleway";
+    font-weight: normal;
+    margin-bottom: 28px;
+}
+.btn-primary{
+    
+    background: #019875;
+    color : #FFF;
+    text-transform: uppercase;
+    font-family: "Web-Raleway";
+    font-size: 16px;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
+.btn-primary:hover,
+.content-list .list-services .button a:hover{
+
+    background: #27ae60;
+    color: #FFFFFF;
+
+}
+
+/* konfigurasi service */
+#our-services{
+    padding: 25px 0;
+    font-family: "Web-Raleway";
+}
+#our-services .title-content{
+    text-transform: uppercase;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+#our-services .title-content span{
+    font-family: "Web-Raleway-Bold";
+    color: #e74c3c
+}
+.content-list .list-services{
+    background: #2c3e50;
+    padding: 18px;
+    float: left;
+    width: 45%;
+    color  : #FFFFFF;
+}
+.content-list .list-services.last{
+    float: right;
+}
+.content-list .list-services h2{
+    text-transform: uppercase;
+    font-family: "Web-Raleway-Bold";
+    font-size: 29px;
+    margin-bottom: 40px;
+    margin-top : 0;
+}
+.content-list .list-services .text{
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+.content-list .list-services .button a{
+    display: inline-block;
+    padding: 10px 15px;
+    border: solid 2px #27ae60;
+    text-decoration: none;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-family: "Web-Raleway";
+}
+
+/* konfigurasi berlangganan */
+#notification-subscribe{
+    background: #d7d7d7;
+    padding: 5px 0;
+    margin-top : 100px;
+}
+#notification-subscribe h2{
+    font-family: "Web-Raleway-Bold";
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+#notification-subscribe h3{
+    margin-top: 0;
+    font-size: 15px;
+    font-family: "Web-Raleway";
+    font-weight: normal;
+}
+#notification-subscribe .left-content{
+    float: left;
+}
+#notification-subscribe .right-content{
+    float: right;
+    padding-top: 35px;
+}
+#notification-subscribe .large-btn{
+    display: inline-block;
+    background: #e74c3c;
+    font-family: "Web-Raleway-Bold";
+    font-size: 19px;
+    padding: 10px 37px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+#notification-subscribe .large-btn:hover{
+    background:  #c0392b;
+}
+
+/* konfigurasi footer */
+#footer{
+    background: #373737;
+    padding: 8px 0;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+/* bikin responsif  */
+@media screen and (max-width : 1095px) {
+
+    .center{
+        width: auto;
+        padding: 0 20px;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 826px) {
+
+    #notification-subscribe .left-content,
+    #notification-subscribe .right-content{
+        float: none;
+        text-align: center;
+    }
+    #notification-subscribe .right-content{
+        padding-top : 10px;
+    }
+
+
+    .content-list .list-services,
+    .content-list .list-services.last{
+        width: auto;
+        display: block;
+        float: none;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 741px) {
+
+    #header .navigation,
+    #header #logo{
+        float: none;
+        width: auto;
+        margin: 0 auto;
+    }
+    #header #logo{
+        margin-bottom: 10px;
+    }
+    #header #logo img{
+        margin: 0 auto;
+        display : table;
+    }
+    #header .navigation ul{
+        display: table;
+        margin : 0 auto;
+    }
+
+    #banner h1{
+        font-size: 30px;
+       
+    }
+
+   
+}
